@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-bg: #000;
+    --input-bg: #06181c;
+    --input-color: #7C7C8A;
+
+    --color-button: #065E7C;
+
+    --font-familyAll: 'Roboto', sans-serif;
+
+    --color-table: #092D38;
+    
+
+}
+
+body{
+    font-size: 1.6rem;
+
+    background: var(--color-bg);
+    font-family: var(--font-familyAll);
+}
+
+#app {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 11.5rem 0 8.7rem 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    height: 4.8rem;
+    width: 46rem;
+
+    padding: 1rem;
+    background: var(--input-bg);
+    color: var(--input-color);
+
+    border: 0;
+    border-radius: .5rem;
+
+
+}
+
+.search button {
+    width: 17rem;
+    height: 4.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+
+    border: 0;
+    border-radius: .5rem;
+
+    font-size: 1.4rem;
+    font-family: var(--font-familyAll);
+    font-weight: 700;
+    line-height: 2.4rem;
+
+    color: var(--color-button);
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search button:hover {
+    background: var(--color-button);
+    color:white;
+  }
+  
+  .search button:hover svg path {
+    fill: white;
+  }
+
+main {
+
+    border-radius: 1.2rem ;
+    margin-bottom: 5rem;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    border-radius: 1.5rem;
+
+    color: #fff;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3 );
+
+}
+
+table * {
+    font-size: 2rem;    
+}
+
+table th {
+    height: 6.4rem;
+    text-align: left;
+    padding: 0 9rem 0 4rem;
+    background: var(--color-table);
+}
+
+table th:first-child{
+    border-top-left-radius: 1rem;
+    
+}
+table th:last-child{
+    border-top-right-radius: 1rem;
+}
+
+table tr:nth-child(even) { 
+    background-color: #092D38;
+}
+
+table tr:nth-child(odd) {
+    background: #000 ;
+}
+
+
+table td {
+    
+width: 100%;
+}
+
+.noFav {
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+    gap: 6rem;
+    color: #4E5455;
+}
+
+.noFav h1 {
+    font-size: 4rem;
+    line-height: 2.4rem;
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+}
+
+
+table td {
+    padding-right: 1.5rem;
+    text-align: left;
+}
+tbody td {
+    padding: 2.4rem 0 2.4rem 4rem;
+}
+
+table th:first-child {
+    width: 80%;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+td.user img {
+    width: 5.6rem;
+    height: 5.6rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user a  {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: #fff;
+
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: none;
+    border: none;
+
+    color: #F75A68;
+
+    cursor: pointer;
+}
